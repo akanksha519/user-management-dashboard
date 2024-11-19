@@ -1,0 +1,95 @@
+/* Style for the table container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #ddc1c1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Style for the main heading */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin: 20px 0;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    hwb(326 2% 70% / 0.777),
+    hwb(326 2% 70% / 0.777)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add spacing below the heading */
+h1 + button {
+  display: block;
+  margin: 10px auto;
+  text-align: left;
+}
+
+/* Table header styles */
+table thead th {
+  background-color: #0250a5;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Table body rows */
+table tbody tr {
+  border-bottom: 1px solid #e24444;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #cedde8;
+}
+
+table tbody tr:hover {
+  background-color: rgb(236, 169, 68);
+}
+
+/* Table cells */
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Buttons in the table */
+button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Add button styles */
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+button:nth-of-type(2) {
+  background-color: #28a745; /* Green for Edit */
+}
+
+button:nth-of-type(3) {
+  background-color: #dc3545; /* Red for Delete */
+}
